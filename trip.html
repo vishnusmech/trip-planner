@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trip Planner</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+
+        .bg {
+            background-image: url('your-background-image.jpg'); /* Replace with your background image URL */
+            height: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .container {
+            background-color: rgba(255, 255, 255, 0.8); /* White background with some transparency */
+            border-radius: 10px;
+            padding: 20px;
+            width: 50%;
+            margin: auto;
+            margin-top: 100px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-top: 10px;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            width: 100%;
+            margin-top: 20px;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+<div class="bg">
+    <div class="container">
+        <h1>Trip Planner</h1>
+        <form>
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+
+            <label for="start-date">Start Date:</label>
+            <input type="date" id="start-date" name="start-date" required>
+
+            <label for="end-date">End Date:</label>
+            <input type="date" id="end-date" name="end-date" required>
+
+            <label for="accommodation">Accommodation:</label>
+            <select id="accommodation" name="accommodation" required>
+                <option value="hotel">Hotel</option>
+                <option value="hostel">Hostel</option>
+                <option value="airbnb">Airbnb</option>
+                <option value="camping">Camping</option>
+            </select>
+
+            <label for="notes">Additional Notes:</label>
+            <textarea id="notes" name="notes" rows="4"></textarea>
+
+            <button type="submit">Plan Trip</button>
+        </form>
+    </div>
+</div>
+
+</body>
+</html>
